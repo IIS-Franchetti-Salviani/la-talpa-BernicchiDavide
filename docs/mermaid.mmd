@@ -1,0 +1,50 @@
+classDiagram
+direction TB
+    class FileManager {
+	    -String file;
+	    +readRecord()
+	    +WriteRecord(Stirng nome, int Punteggio)
+    }
+
+    class Mole {
+	    -TipoTalpa tp;
+	    -boolean uscita;
+    }
+
+    class Hole {
+	    -Boolean clickabile;
+    }
+
+    class GestoreGioco {
+	    -Timer tempoRound;
+	    -Timer tempoBetweenRound;
+    }
+
+    class Giocatore {
+        -String nome;
+        -int punteggio;
+    }
+
+    class ThreadManager {
+    }
+
+    class ThreadBuco extends Thread {
+	    +ThreadBuco(Mole t, Hole b)
+	    +esciTapla()
+	    +rientraTalpa()
+    }
+
+    class SchermataDiInizio {
+    }
+
+    class SchermataGioco {
+    }
+
+    GestoreGioco -- Giocatore: player
+    GestoreGioco -- "1...*"Hole: buchi
+    GestoreGioco -- "1...*"Mole: talpe
+    GestoreGioco -- FileManager: GestoreFile
+    GestoreGioco -- ThreadManager: gestoreThread
+    GestoreGioco -- SchermataDiInizio: jfInizio
+    GestoreGioco -- SchermataGioco: jfGioco
+    ThreadManager-- "1---*"ThreadBuco extends Thread: threads
