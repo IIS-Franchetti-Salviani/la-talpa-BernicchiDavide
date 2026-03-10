@@ -8,6 +8,6 @@ package wac.a.mole;
  *
  * @author bernicchi.davide
  */
-public class ThreadBuco {
+public class ThreadBuco extends Thread{
     
 }

@@ -14,7 +14,9 @@ public class WacAMole {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        SchermataGioco sg = new SchermataGioco();
+        sg.setVisible(true);
+        sg.setSize(900, 1400);
     }
     
 }
