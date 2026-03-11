@@ -8,9 +8,6 @@ package wac.a.mole;
  *
  * @author bernicchi.davide
  */
-public class Mole {
-    TypeMole tipoTalpa;
-    Mole(TypeMole tm){
-        tipoTalpa = tm;
-    }
+public enum TypeMole {
+    Norm, Oro, Albina
 }

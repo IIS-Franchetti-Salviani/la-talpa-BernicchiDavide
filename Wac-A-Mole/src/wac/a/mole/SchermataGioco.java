@@ -4,6 +4,8 @@
  */
 package wac.a.mole;
 
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author bernicchi.davide
@@ -17,8 +19,7 @@ public class SchermataGioco extends javax.swing.JFrame {
      */
     public SchermataGioco() {
 
-       initComponents();// GestoreGioco gg = new GestoreGioco();
-        //this.jButton1.setText(gg.get);
+        initComponents();
     }
 
     /**
@@ -115,9 +116,8 @@ public class SchermataGioco extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        /*punteggio= gg.talpaSchiacciata(1);
-        lblPunteggiosetText(punteggio);*/
+        /*ImageIcon icona = new ImageIcon(getClass().getResource("/images/buco.png"));
+        jButton1.setIcon(icona);*/
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -171,6 +171,8 @@ public class SchermataGioco extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new SchermataGioco().setVisible(true));
+        GestoreGioco gg = new GestoreGioco();
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

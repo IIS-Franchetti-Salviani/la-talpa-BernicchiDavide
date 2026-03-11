@@ -9,5 +9,11 @@ package wac.a.mole;
  * @author bernicchi.davide
  */
 public class ThreadBuco extends Thread{
+    Hole buco;
+    
+    ThreadBuco(Hole b){
+        buco=b;
+    }
+    
     
 }

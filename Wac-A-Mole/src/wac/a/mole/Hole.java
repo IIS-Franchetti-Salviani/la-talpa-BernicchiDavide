@@ -10,4 +10,8 @@ package wac.a.mole;
  */
 public class Hole {
     
+    Hole(Mole[] talpe){
+        
+    }
+    
 }
