@@ -14,6 +14,9 @@ public class ThreadBuco extends Thread{
     ThreadBuco(Hole b){
         buco=b;
     }
-    
+    @Override
+    public void run(){
+        
+    }
     
 }
